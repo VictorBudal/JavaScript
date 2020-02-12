@@ -1,18 +1,17 @@
 class Raquete{
-   constructor(){
-    this.x=600/2;
-    this.y=265;
-    this.w=100;
-    this.h=15;
-    this.speed = 5;
-    this.score=0;
-   }
-   draw(){
+  constructor(){
+   this.x=600/2;
+   this.y=265;
+   this.w=100;
+   this.h=15;
+   this.speed = 10;
+   this.score=0;
+  }
+  draw(){
     fill(255);
     rect(this.x,this.y,this.w,this.h)
-   }
-
-   move(){
+  }
+  move(){
     if(keyIsDown(37)){
         this.x-=this.speed;
         }
@@ -26,15 +25,6 @@ class Raquete{
         this.x=0;
     }
    }
-    update(raquete){
-        this.x=600/2;
-        this.y=265;
-        this.w=100;
-        this.h=15;
-        this.speed = 5;
-
-   }
 
 
 }
-
