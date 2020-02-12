@@ -15,6 +15,7 @@ function configuracao(){
   }
 
   if(tentativas==0){
+    alert("Tente novamente");
     restart();
     
   }
